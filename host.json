@@ -1,0 +1,8 @@
+{
+    "tracing": {
+        "consoleLevel": "info"
+    },
+    "swagger": {
+        "enabled": true
+    }
+}
