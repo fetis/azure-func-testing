@@ -1,5 +1,6 @@
 var json = require('./test.json');
 var oneLinerJoke = require('one-liner-joke');
+var gameName = require('random-game-name');
 
 module.exports = function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
@@ -12,7 +13,8 @@ module.exports = function (context, req) {
         const result = {
             data: `Hello ${name}. Here's joke for you?`,
             json,
-            joke: joke.body 
+            joke: joke.body ,
+            game: gameName.random()
         }
 
         context.res = {
